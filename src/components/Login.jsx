@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import "../assets/Styles/Login.css";
+import "../assets/Login.css";
 
 const Login = ({ setUsername, setPassword }) => {
   return (

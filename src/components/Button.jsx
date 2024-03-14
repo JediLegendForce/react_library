@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import "../assets/Styles/Button.css";
+import "../assets/Button.css";
 const Button = ({ onClick, text, disabled }) => {
   return (
     <div className="container">

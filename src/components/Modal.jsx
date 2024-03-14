@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/Styles/Modal.css";
+import "../assets/Modal.css";
 
 const Modal = ({ title, body, buttons }) => {
   return (

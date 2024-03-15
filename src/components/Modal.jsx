@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/Modal.css";
 
-const Modal = ({ title, body, buttons }) => {
+const Modal = ({ title, body, buttons, className = "" }) => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div className="modal-container">
+    <div className={`${className}`}>
       <h2 style={{ textAlign: "center" }}>{title}</h2>
       <div>{body}</div>
       {buttons}
